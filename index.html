@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>ENCRIPTADOR/DESENCRIPTADOR</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <nav class="menu">
+        <img class="menu__logo" src="./imgs/Logo.png" alt="Logo" />
+        <div class="menu__button-container">
+          <button class="menu__button-container--button" id="btnEncryptDecrypt">Encrypt / Decrypt</button>
+          <button class="menu__button-container--button" id="btnConfig">Configuration</button>
+        </div>
+      </nav>
+    </header>
+    <span class="animated-border">
+      
+    </span>
+
+    <main class="main" id="divInput">
+      <div class="main__input-container">
+        <textarea class="main__input-container--textencrypt" id="textEncrypt" placeholder="Insert the Text" pattern="[a-z]" ></textarea>
+        <div class="main__button-container">
+          <button class="main__button-container--encrypt-button" id="btnEncrypt">ENCRYPT</button>
+          <button class="main__button-container--decrypt-button" id="btnDecrypt">DECRYPT</button>
+        </div>
+      </div> 
+
+      <div class="main__output-container" id="divOutput">
+          <img class="main__output-container--img" src="./imgs/future.gif" alt="" id="imgText">
+          <textarea class="main__output-container--p" id="newText"></textarea>
+          <button class="main__output-container--button" id="btnCopy">Copy</button>
+      </div>
+    </main>
+    
+
+    <form class="config" style="display: none" id="configForm">
+    
+     <div class="config__label-input-container">
+      <label class="config__inputs-content--label" for="keyA">a:</label>
+        <input class="config__inputs-content--input" type="text" id="keyA" value="ai" pattern="[a-z]" />
+     </div>
+
+     <div class="config__label-input-container">
+      <label class="config__inputs-content--label" for="keyE">e:</label>
+      <input class="config__inputs-content--input" type="text" id="keyE" value="enter" />
+     </div>
+  
+
+     <div class="config__label-input-container">
+      <label class="config__inputs-content--label" for="keyI">i:</label>
+      <input class="config__inputs-content--input" type="text" id="keyI" value="imes" />
+     </div>
+ 
+     <div class="config__label-input-container">
+      <label class="config__inputs-content--label" for="keyO">o:</label>
+      <input class="config__inputs-content--input" type="text" id="keyO" value="ober" />
+     </div>
+
+     <div class="config__label-input-container">
+      <label class="config__inputs-content--label" for="keyU">u:</label>
+      <input class="config__inputs-content--input" type="text" id="keyU" value="ufat" />
+     </div>
+
+     
+
+
+
+       
+
+
+
+        <input class="config__inputs-content--input-button" id="btnSubmit" type="button" value="Save Changes" />
+  
+     
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

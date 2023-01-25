@@ -1,0 +1,367 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/DESIB___.TTF);
+  }
+
+  @font-face {
+    font-family: varino;
+    src: url(../fonts/Varino__Normal.ttf);
+  }
+
+
+
+
+/*-------------HEADER-----------------*/
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.80) 0px 5px 15px;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__button-container--button{
+    margin-right: 100px;
+    background-color: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.menu__button-container--button:hover{
+
+    background-color: rgb(47, 0, 255);
+
+}
+
+/*---------------MAIN--------------------*/
+
+.main{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    height: 90vh;
+    max-width: 1440px;
+    max-height: 1024px;
+}
+
+.main__input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    height: 80%; 
+    width: 90%;
+
+}
+
+.main__input-container--textencrypt{
+    font-family: varino;
+    font-size: 30px;
+   height: 90%;
+   width: 90%;
+   resize: none;
+   border: none;
+   outline: none;
+
+}
+
+
+
+
+
+.main__input-container--textencrypt::placeholder{
+    font-size: 1em;
+    font-family: varino;
+ 
+ }
+
+
+.main__button-container{
+    height: 20%;
+    width: 80%;
+    display: flex;
+
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main__button-container--encrypt-button{
+    height: 50%;
+    width: 45%;
+    border: 0px solid #0A3871;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: myfirstFont;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+
+}
+
+.main__button-container--decrypt-button{
+    height: 50%;
+    width: 45%;
+    color: #ffffff;
+    border: 0px solid #0A3871;
+    border-radius: 30px;
+    font-family: myfirstFont;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+
+
+
+.main__button-container--decrypt-button:hover, .main__button-container--encrypt-button:hover{
+    transform: scale(1.2);
+
+    box-shadow: 0 0 5px rgb(0,140,255),
+    0 0 25px rgb(0,140,255),
+    0 0 50px rgb(0,140,255),
+    0 0 100px rgb(0,140,255);
+}
+
+
+.main__output-container{
+    background-image: url('../imgs/matrix.gif');
+    background-size: cover;
+    display: flex;
+    height: 80%; 
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.80) 0px 5px 15px;
+}
+
+
+.main__output-container--img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.main__output-container--p{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: varino;
+    padding: 20px;
+    margin: 10px 0;
+    color: #ffffff;;
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: transparent;
+}
+
+
+
+
+
+.main__output-container--button{
+    display: none;
+    width: 60%;
+    height: 8%;
+    font-weight: bold;
+    border: 0px solid #0A3871;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+
+    font-size: 2em;
+    font-family: myfirstFont;
+    color: #000000;
+    background: rgb(0, 255, 34);
+    box-shadow: 0 0 25px rgb(0, 255, 34);
+}
+
+.main__output-container--button:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*-----------CONFIGURATION----------*/
+.config{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.config__label-input-container{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    
+}
+
+.config__inputs-content--label{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-family: myFirstFont;
+    height: 100%;
+    width: 5%;
+    min-width: 60px;
+    font-size: 2em;
+    margin-right: 10px;
+    color: #fff;
+    margin: 0;
+    background: rgb(0,140,255);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.config__inputs-content--input{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    outline: none;
+    min-width: 100px;
+}
+
+
+
+.config__inputs-content--input-button{
+    display: none;
+    height: 5%;
+    width: 20%;
+    color: #ffffff;
+    border: 0px solid #0A3871;
+    border-radius: 30px;
+    font-family: myfirstFont;
+    font-weight: bold;
+    font-size: 2em;
+    min-width: 300px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        min-width: 300px;
+    }
+
+   .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+   .menu__button-container{
+    width: 50%;
+   }
+
+   .menu__button-container--button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+   }
+
+
+   .main{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+   }
+
+
+   .main__input-container{
+    width: 100%;
+    height: 50%;
+   }
+
+   .main__output-container{
+    width: 100%;
+    height: 50%;
+   }
+  }
+
+
+.animated-border {
+    width: 5vw;
+    height: 0px;
+    display: block;
+    position: relative;
+      
+    background: rgb(0,140,255);
+    box-shadow: 0 0 5px rgb(0,140,255),
+    0 0 25px rgb(0,140,255),
+    0 0 50px rgb(0,140,255),
+    0 0 100px rgb(0,140,255);
+    border-bottom: 10px solid rgb(0,140,255);
+    animation: move-border 2s linear infinite;
+}
+
+
+
+@keyframes move-border {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 95%;
+    }
+}
+
+
+
+
